@@ -46,4 +46,10 @@ class Ingresso{
 }
 
 
+
+Ingresso <|-- Cliente
+Filme <|-- Ingresso
+Cinema <|-- Ingresso
+Cinema <|-- Filme
+
 @enduml
