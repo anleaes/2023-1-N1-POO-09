@@ -30,6 +30,9 @@ class Filme{
     - duracao: Float
     - tipo: String
     - classificacao: String
+    - cinema: Cinema
+    + construtor(idFilme, nomeFilme, descricao, duracao, tipo, classificacao, cinema)
+    + consultaFilme(idFilme, nomeFilme)
 }
 
 class Ingresso{
