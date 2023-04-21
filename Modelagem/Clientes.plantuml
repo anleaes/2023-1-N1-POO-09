@@ -27,6 +27,9 @@ class Filme{
     - idFilme: String
     - nomeFilme: String
     - descricao: String
+    - duracao: Float
+    - tipo: String
+    - classificacao: String
 }
 
 class Ingresso{
