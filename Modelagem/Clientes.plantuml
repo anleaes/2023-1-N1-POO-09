@@ -17,8 +17,10 @@ title Atividade 1 - Diagrama de Classe - Venda de Ingresso de Cinema
 class Cinema{
     - idCinema: Int
     - nomeCinema: String
-    + construtor(idCinema, nomeCinema)
-    + consultaCinema()
+    - telefoneCinema: Int
+    - enderecoCinema: String
+    + construtor(idCinema, nomeCinema, telefoneCinema, enderecoCinema)
+    + consultaCinema(idCinema, nomeCinema)
 }
 
 class Filme{
