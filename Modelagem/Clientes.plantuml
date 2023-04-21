@@ -24,9 +24,9 @@ class Cinema{
 }
 
 class Filme{
-    
-    + construtor()
-    + consultaFilme()
+    - idFilme: String
+    - nomeFilme: String
+    - descricao: String
 }
 
 class Ingresso{
