@@ -41,8 +41,8 @@ class Ingresso{
     - poltrona: String
     - valorIngresso: Float
     - cliente: Cliente
-    + construtor()
-    + consultaIngresso()
+    + construtor(idIngresso, dataIngresso, horaSessao, filme, cinema, poltrona, valorIngresso, cliente)
+    + consultaIngresso(idIngresso, pessoa)
 }
 
 
