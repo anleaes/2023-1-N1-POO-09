@@ -30,7 +30,14 @@ class Filme{
 }
 
 class Ingresso{
-
+    - idIngresso: Int
+    - dataIngresso: Date
+    - horaSessao: Date
+    - filme: Filme
+    - cinema: Cinema
+    - poltrona: String
+    - valorIngresso: Float
+    - cliente: Cliente
     + construtor()
     + consultaIngresso()
 }
