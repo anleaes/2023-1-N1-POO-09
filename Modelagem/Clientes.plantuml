@@ -1,32 +1,56 @@
 
-
 @startuml A1
 
 title Atividade 1 - Diagrama de Classe - Venda de Ingresso de Cinema
 
-    class Cliente{
 
-    + construtor()
-    + consultaCliente()
+    class Cliente{
+    - idCliente: Int
+    - nomeCliente: String
+    - senhaCliente: String 
+    - enderecoCliente: String
+    - emailCliente: String
+    + construtor(idCliente, nomeCliente, senhaCliente, enderecoCliente, emailCliente)
+    + consultaCliente(idCliente, nomeCliente)
 }
 
 class Cinema{
-
-    + construtor()
-    + consultaCinema()
+    - idCinema: Int
+    - nomeCinema: String
+    - telefoneCinema: Int
+    - enderecoCinema: String
+    + construtor(idCinema, nomeCinema, telefoneCinema, enderecoCinema)
+    + consultaCinema(idCinema, nomeCinema)
 }
 
 class Filme{
-    
-    + construtor()
-    + consultaFilme()
+    - idFilme: String
+    - nomeFilme: String
+    - descricao: String
+    - duracao: Float
+    - tipo: String
+    - classificacao: String
+    - cinema: Cinema
+    + construtor(idFilme, nomeFilme, descricao, duracao, tipo, classificacao, cinema)
+    + consultaFilme(idFilme, nomeFilme)
 }
 
 class Ingresso{
-
-    + construtor()
-    + consultaIngresso()
+    - idIngresso: Int
+    - dataIngresso: Date
+    - horaSessao: Date
+    - filme: Filme
+    - cinema: Cinema
+    - poltrona: String
+    - valorIngresso: Float
+    - cliente: Cliente
+    + construtor(idIngresso, dataIngresso, horaSessao, filme, cinema, poltrona, valorIngresso, cliente)
+    + consultaIngresso(idIngresso, pessoa)
 }
 
+Ingresso <|-- Cliente
+Filme <|-- Ingresso
+Cinema <|-- Ingresso
+Cinema <|-- Filme
 
 @enduml
