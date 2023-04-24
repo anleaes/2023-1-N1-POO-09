@@ -3,7 +3,6 @@
 
 title Atividade 1 - Diagrama de Classe - Venda de Ingresso de Cinema
 
-
     class Cliente{
     - idCliente: Int
     - nomeCliente: String
@@ -47,8 +46,6 @@ class Ingresso{
     + construtor(idIngresso, dataIngresso, horaSessao, filme, cinema, poltrona, valorIngresso, cliente)
     + consultaIngresso(idIngresso, pessoa)
 }
-
-
 
 Ingresso <|-- Cliente
 Filme <|-- Ingresso
